@@ -1,0 +1,265 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0066cc;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Hero Section */
+.hero {
+    background: url("https://cdn.pixabay.com/photo/2018/01/04/19/43/lgbt-3063576_960_720.jpg") no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(109, 63, 63);
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 1px 1px #000;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .about h2 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    color: #4c4c4c;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 20px auto 0;
+    max-width: 800px;
+    text-align: center;
+    color: #4c4c4c;
+  }
+  
+  /* Job Section */
+  .jobs {
+    padding: 80px 0;
+    background-color: #fff;
+  }
+  
+  .jobs h2 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    color: #4c4c4c;
+  }
+  
+  .jobs ul {
+    list-style: none;
+    margin: 40px auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  
+  .jobs li {
+    background-color: #f5f5f5;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .jobs li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .jobs h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #4c4c4c;
+  }
+  
+  .jobs p {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: #4c4c4c;
+  }
+  
+  .jobs a {
+    display: block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .jobs a:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .contact h2 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    color: #4c4c4c;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4c4c4c;
+  }
+  
+.contact input[type="text"], 
+.contact input[type="email"], 
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  background-color: #f1f1f1;
+}
+
+.contact input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+  .contact input[type="text"], 
+  .contact input[type="email"], 
+  .contact textarea {
+    width: 100%;
+  }
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 10px 0;
+    }
+  }
+  
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    img {
+      width: 100%;
+    }
+  }
+    
